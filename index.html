@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mis XV Años - Ian André</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Orbitron:wght@500;700;900&family=Montserrat:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Bowlby+One&family=Montserrat:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
 :root{--petrol:#0F4C5C;--petrol-d:#082C36;--black:#050709;--silver:#C9D1D6;--silver-l:#F2F6F8;--glow:#2EC4D6;--muted:#9FB3BA;--ease:cubic-bezier(.25,1,.5,1)}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -22,8 +22,8 @@ body.content-active .music-btn{opacity:1;visibility:visible;transform:scale(1)}
 #envelope-screen.fade-out{opacity:0;visibility:hidden;pointer-events:none}
 .env-text{text-align:center;margin-bottom:50px;animation:floatY 4s ease-in-out infinite;position:relative;z-index:10}
 .env-tag{font-family:'Cinzel',serif;font-size:14px;letter-spacing:8px;text-transform:uppercase;color:var(--silver)}
-.env-title{font-family:'Orbitron',sans-serif;font-weight:900;font-size:56px;line-height:1.15;margin-top:8px;letter-spacing:4px}
-.metal{background:linear-gradient(110deg,#7d8b93 0%,#fff 25%,#C9D1D6 40%,#2EC4D6 52%,#fff 65%,#7d8b93 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 4s linear infinite;filter:drop-shadow(0 0 12px rgba(46,196,214,.35))}
+.env-title{font-family:'Bowlby One','Archivo Black',sans-serif;font-weight:900;font-size:56px;line-height:1.15;margin-top:8px;letter-spacing:4px}
+.metal{background:linear-gradient(110deg,#E6DFC9 0%,#fff 28%,#F6EFD9 45%,#9fe6f0 55%,#fff 70%,#E6DFC9 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 4s linear infinite;filter:drop-shadow(0 0 12px rgba(46,196,214,.35))}
 @keyframes shine{to{background-position:-250% 0}}
 @keyframes floatY{50%{transform:translateY(-6px)}}
 .env-wrap{position:relative;cursor:pointer;transition:transform .6s var(--ease);z-index:10}
@@ -57,7 +57,7 @@ body.content-active #main{display:flex}
 @keyframes drift{to{transform:translate(40px,-30px) scale(1.2)}}
 
 .tag{font-family:'Cinzel',serif;font-size:14px;letter-spacing:6px;text-transform:uppercase;color:var(--glow);margin-bottom:22px;font-weight:500}
-.title{font-family:'Orbitron',sans-serif;font-weight:900;font-size:64px;line-height:1.1;letter-spacing:3px;margin-bottom:18px}
+.title{font-family:'Bowlby One','Archivo Black',sans-serif;font-weight:900;font-size:64px;line-height:1.1;letter-spacing:3px;margin-bottom:18px}
 .body{font-family:'Cormorant Garamond',serif;font-size:23px;line-height:1.6;color:var(--muted);font-style:italic;max-width:620px;padding:0 12px}
 .vline{width:1px;height:60px;background:linear-gradient(var(--glow),transparent);margin:32px auto}
 .hline{width:90px;height:1px;background:linear-gradient(90deg,transparent,var(--silver),transparent);margin:40px auto}
@@ -75,12 +75,12 @@ body.content-active #main{display:flex}
 /* Cuenta regresiva */
 .count{display:flex;gap:12px;justify-content:center;margin:35px auto;flex-wrap:wrap}
 .cbox{width:74px;padding:16px 0;background:rgba(255,255,255,.05);border:1px solid rgba(201,209,214,.35);backdrop-filter:blur(6px);box-shadow:0 0 18px rgba(46,196,214,.2)}
-.cbox b{display:block;font-family:'Orbitron',sans-serif;font-size:28px;font-weight:700}
+.cbox b{display:block;font-family:'Bowlby One','Archivo Black',sans-serif;font-size:28px;font-weight:700}
 .cbox span{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
 
 /* Calendario */
 .cal{width:100%;max-width:340px;margin:35px auto;padding:32px 22px;background:rgba(255,255,255,.04);border:1px solid rgba(201,209,214,.3);box-shadow:0 0 30px rgba(46,196,214,.18)}
-.cal-m{font-family:'Orbitron',sans-serif;font-size:18px;letter-spacing:5px;text-transform:uppercase;margin-bottom:26px}
+.cal-m{font-family:'Bowlby One','Archivo Black',sans-serif;font-size:18px;letter-spacing:5px;text-transform:uppercase;margin-bottom:26px}
 .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
 .ch{font-size:12px;font-weight:500;color:var(--glow);padding-bottom:10px}
 .cd{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--muted);display:flex;justify-content:center;align-items:center;aspect-ratio:1}
@@ -95,7 +95,7 @@ body.content-active #main{display:flex}
 .ev{display:flex;gap:22px;margin-bottom:38px;align-items:flex-start}
 .ico{flex:0 0 55px;height:55px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--petrol),var(--black));border:1px solid var(--silver);display:flex;justify-content:center;align-items:center;box-shadow:0 0 18px rgba(46,196,214,.5);z-index:2}
 .ico svg{width:24px;height:24px;stroke:var(--silver-l);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.ev h4{font-family:'Orbitron',sans-serif;font-size:14px;letter-spacing:2px;color:var(--glow);margin-bottom:6px}
+.ev h4{font-family:'Bowlby One','Archivo Black',sans-serif;font-size:14px;letter-spacing:2px;color:var(--glow);margin-bottom:6px}
 .ev p{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.35}
 .ev small{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--muted);font-size:18px}
 
@@ -113,6 +113,15 @@ textarea.inp{resize:vertical;min-height:90px}
 .box{background:rgba(255,255,255,.05);border:1px solid rgba(201,209,214,.3);padding:28px;max-width:400px;width:100%;margin-top:28px}
 
 @media(max-width:400px){.env-title{font-size:42px}.title{font-size:44px}.sec{padding:80px 15px}.i-data{font-size:27px}.map{height:260px}.envelope{width:300px;height:195px}.envelope::before,.envelope::after{border-left-width:150px;border-right-width:150px;border-top-width:97px;border-bottom-width:97px}.flap{border-left-width:150px;border-right-width:150px;border-top-width:105px}.cbox{width:66px}}
+
+/* Estilo titulares tipo DeBÍ TiRAR MáS FOToS */
+body{font-synthesis:none}
+.poster{font-family:'Bowlby One','Archivo Black',sans-serif;color:#F6EFD9;text-shadow:0 0 18px rgba(46,196,214,.35)}
+.title,.env-title,.poster,[style*="Bowlby"]{letter-spacing:0!important;line-height:.95!important;text-transform:none!important;font-weight:400!important}
+.title{font-size:80px}
+.env-title{font-size:58px}
+.cbox b,.ev h4,.cal-m{letter-spacing:1px}
+@media(max-width:400px){.title{font-size:60px}.env-title{font-size:46px}}
 </style>
 </head>
 <body>
@@ -128,7 +137,7 @@ textarea.inp{resize:vertical;min-height:90px}
 <div id="envelope-screen">
   <div class="env-text">
     <div class="env-tag">Mis XV Años</div>
-    <h1 class="env-title metal">Ian André</h1>
+    <h1 class="env-title metal">IaN<br>AnDRé</h1>
   </div>
   <div class="env-wrap" onclick="openEnvelope()">
     <div class="flap"></div>
@@ -145,7 +154,7 @@ textarea.inp{resize:vertical;min-height:90px}
   <div class="orb" style="width:300px;height:300px;background:var(--glow);opacity:.25;top:-80px;left:-80px"></div>
   <div class="orb" style="width:260px;height:260px;background:var(--petrol);opacity:.6;bottom:0;right:-60px"></div>
   <div class="anim up d1 tag">Mis XV Años</div>
-  <h1 class="anim zoom d2 title metal">Ian André</h1>
+  <h1 class="anim zoom d2 title metal">IaN<br>AnDRé</h1>
   <div class="anim up d3 vline"></div>
   <p class="anim up d4 body">"Hoy empieza una nueva etapa. Gracias por acompañarme a celebrarla, la noche promete ser inolvidable."</p>
   <div class="anim up d4 photo"><img src="assets/foto1.jpg" alt="Ian André" onerror="this.parentNode.style.display='none'"></div>
@@ -155,7 +164,7 @@ textarea.inp{resize:vertical;min-height:90px}
 <section class="sec s-petrol">
   <div class="orb" style="width:280px;height:280px;background:var(--silver);opacity:.12;top:10%;right:-90px"></div>
   <div class="anim up d1 i-title">Será un honor contar con tu presencia el</div>
-  <div class="anim up d2 i-data metal" style="font-family:'Orbitron',sans-serif;font-size:36px;font-weight:700;letter-spacing:2px">21 de Noviembre</div>
+  <div class="anim up d2 i-data metal" style="font-family:'Bowlby One','Archivo Black',sans-serif;font-size:42px">21 De<br>NoViEMBRe</div>
   <div class="anim up d3 i-data" style="font-size:24px;color:var(--glow);letter-spacing:4px">2026</div>
 
   <div class="anim zoom d3 count" id="countdown">
@@ -179,7 +188,7 @@ textarea.inp{resize:vertical;min-height:90px}
   <div class="orb" style="width:260px;height:260px;background:var(--glow);opacity:.18;bottom:5%;left:-80px"></div>
   <div class="anim up d1 i-title">Con el amor de mis padres</div>
   <div class="anim up d2 i-data">Yolotl Belém Suárez</div>
-  <div class="anim up d3" style="font-family:'Orbitron',sans-serif;font-size:18px;color:var(--glow);margin:14px 0">&</div>
+  <div class="anim up d3" style="font-family:'Bowlby One','Archivo Black',sans-serif;font-size:18px;color:var(--glow);margin:14px 0">&</div>
   <div class="anim up d3 i-data">Omar Pasapera</div>
   <div class="anim zoom d4 hline"></div>
   <div class="anim up d4 i-title">Y mi Madrina</div>
@@ -191,7 +200,7 @@ textarea.inp{resize:vertical;min-height:90px}
 <section class="sec s-petrol">
   <div class="orb" style="width:300px;height:300px;background:var(--silver);opacity:.1;top:5%;left:-100px"></div>
   <div class="anim up d1 i-title">Recepción</div>
-  <div class="anim up d2 i-data metal" style="font-family:'Orbitron',sans-serif;font-size:34px;font-weight:700">Salón Jardín</div>
+  <div class="anim up d2 i-data metal" style="font-family:'Bowlby One','Archivo Black',sans-serif;font-size:42px">SaLóN<br>JaRDíN</div>
   <div class="anim up d3 tag" style="margin:15px 0;color:var(--silver)">6:15 p.m.</div>
   <div class="anim zoom d4 map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.34460140902!2d-99.1304505!3d19.3975113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fef1dd7b150d%3A0xb3dc7406f7d0f373!2zU2Fsw7NuIEphcmTDrW4!5e0!3m2!1ses-419!2smx!4v1792200169520!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -203,7 +212,7 @@ textarea.inp{resize:vertical;min-height:90px}
 <!-- ITINERARIO -->
 <section class="sec s-dark">
   <div class="anim up d1 i-title">Programa</div>
-  <div class="anim up d2 i-data metal" style="font-family:'Orbitron',sans-serif;font-size:32px;font-weight:700">Itinerario</div>
+  <div class="anim up d2 i-data metal" style="font-family:'Bowlby One','Archivo Black',sans-serif;font-size:40px">iTiNERaRio</div>
   <div class="timeline">
     <div class="anim left ev"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h4>6:15 P.M.</h4><p>¡Arrancamos, que comience la fiesta!</p></div></div>
     <div class="anim right ev"><div class="ico"><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 2-3 5-3 8h3v10"/></svg></div><div><h4>8:00 P.M.</h4><p>¡A comer!<small>Cena informal</small></p></div></div>
@@ -217,7 +226,7 @@ textarea.inp{resize:vertical;min-height:90px}
 <section class="sec s-black">
   <div class="orb" style="width:280px;height:280px;background:var(--glow);opacity:.2;top:20%;right:-100px"></div>
   <div class="anim up d1 i-title">Código de Vestimenta</div>
-  <div class="anim up d2 metal" style="font-family:'Orbitron',sans-serif;font-size:38px;font-weight:900;margin:22px 0;letter-spacing:4px">CASUAL<br>CON ACTITUD</div>
+  <div class="anim up d2 metal" style="font-family:'Bowlby One','Archivo Black',sans-serif;font-size:42px;margin:22px 0">CaSuAL<br>CoN ACTiTuD</div>
   <div class="anim up d3 vline"></div>
   <p class="anim up d4 body" style="font-size:21px">Ven cómodo y con estilo: viste casual, pero con actitud de fiesta. Lo importante es que te sientas a gusto y vengas listo para bailar toda la noche.</p>
   <div class="anim up d4 photo" style="margin-top:70px"><img src="assets/foto5.jpg" alt="Dress code" onerror="this.parentNode.style.display='none'"></div>
@@ -228,9 +237,9 @@ textarea.inp{resize:vertical;min-height:90px}
   <div class="orb" style="width:260px;height:260px;background:var(--silver);opacity:.12;bottom:10%;left:-80px"></div>
   <div class="anim up d1 i-title">Mesa de Regalos</div>
   <svg class="anim zoom d2" viewBox="0 0 24 24" style="width:46px;height:46px;stroke:var(--silver);fill:none;stroke-width:1.5;margin:20px 0;filter:drop-shadow(0 0 8px var(--glow))"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M3 12h18M12 8v13M12 8c-2-4-6-4-6-1s4 1 6 1zM12 8c2-4 6-4 6-1s-4 1-6 1z"/></svg>
-  <div class="anim up d3 i-data" style="font-size:34px">Lluvia de Sobres</div>
+  <div class="anim up d3 poster" style="font-size:36px">LLuViA De<br>SoBReS</div>
   <div class="anim up d3 tag" style="margin:10px 0">&</div>
-  <div class="anim up d3 i-data" style="font-size:34px">Regalo Sorpresa</div>
+  <div class="anim up d3 poster" style="font-size:36px">ReGaLo<br>SoRPReSa</div>
   <p class="anim up d4 body" style="margin-top:22px;font-size:20px">Habrá un cofre en la recepción para tu lluvia de sobres o, si lo prefieres, puedes sorprenderme con un obsequio especial.</p>
   <div class="anim up d4 photo" style="margin-top:70px"><img src="assets/foto6.jpg" alt="Regalos" onerror="this.parentNode.style.display='none'"></div>
 </section>
@@ -239,7 +248,7 @@ textarea.inp{resize:vertical;min-height:90px}
 <section class="sec s-dark">
   <div class="orb" style="width:300px;height:300px;background:var(--glow);opacity:.18;top:10%;left:-100px"></div>
   <div class="anim up d1 i-title">Música</div>
-  <div class="anim up d2 i-data metal" style="font-family:'Orbitron',sans-serif;font-size:30px;font-weight:700">Nuestra Playlist</div>
+  <div class="anim up d2 i-data metal" style="font-family:'Bowlby One','Archivo Black',sans-serif;font-size:40px">NuESTRa<br>PLaYLiST</div>
   <p class="anim up d3 body" style="margin:20px auto 38px;font-size:20px">Ayúdame a armar la lista perfecta agregando tus canciones favoritas para la pista de baile.</p>
   <div class="anim zoom d4" style="width:100%;max-width:480px">
     <iframe data-testid="embed-iframe" style="border-radius:12px;box-shadow:0 0 35px rgba(46,196,214,.3)" src="https://open.spotify.com/embed/playlist/5MY1jVpLur46oDzrMV7yzC?utm_source=generator&theme=0&si=8ac400d388f24a5d" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -251,7 +260,7 @@ textarea.inp{resize:vertical;min-height:90px}
 <!-- GALERÍA -->
 <section class="sec s-black">
   <div class="anim up d1 i-title">Momentos</div>
-  <div class="anim up d2 i-data metal" style="font-family:'Orbitron',sans-serif;font-size:30px;font-weight:700">Galería en Vivo</div>
+  <div class="anim up d2 i-data metal" style="font-family:'Bowlby One','Archivo Black',sans-serif;font-size:40px">GaLERía<br>eN ViVo</div>
   <p class="anim up d3 body" style="margin:25px auto;font-size:20px">Captura la magia de esta noche. Comparte todas las fotos y videos que tomes directamente en nuestro álbum digital.<br><br>
     <span style="font-size:14px;font-family:'Montserrat',sans-serif;font-style:normal;font-weight:500">Te sugerimos tener instalada la app de <strong>Google Drive</strong> para subir tus archivos fácilmente.</span></p>
   <a href="https://drive.google.com/drive/folders/1ozLF_Auj4jsS6VkQQWTozWQBmIbbf_Ss?usp=sharing" target="_blank" class="anim up d4 btn">Subir mis Fotos</a>
@@ -268,14 +277,14 @@ textarea.inp{resize:vertical;min-height:90px}
       <div class="tag" style="margin-bottom:18px">Boleto Especial</div>
       <div id="ticket-name" style="font-family:'Cormorant Garamond',serif;font-size:28px;font-style:italic;margin-bottom:15px;color:var(--silver-l)">Invitado Especial</div>
       <div class="body" style="font-size:19px;margin:0 auto 12px">Pases Asignados</div>
-      <div id="ticket-count" class="metal" style="font-family:'Orbitron',sans-serif;font-size:60px;font-weight:900;line-height:1">0</div>
+      <div id="ticket-count" class="metal" style="font-family:'Bowlby One','Archivo Black',sans-serif;font-size:60px;font-weight:900;line-height:1">0</div>
       <div style="font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-top:32px">Muestra esta pantalla al llegar</div>
     </div>
     <div class="anim up hline" style="margin:55px auto"></div>
   </div>
 
   <div class="anim up d1 i-title">RSVP</div>
-  <div class="anim up d2 i-data" style="font-size:34px">Confirmar Asistencia</div>
+  <div class="anim up d2 poster" style="font-size:36px">CoNFiRMAR<br>ASiSTeNCiA</div>
   <p class="anim up d3 body" style="margin:15px auto 35px;font-size:20px">Agradeceremos tu confirmación lo antes posible.</p>
 
   <div class="fg anim up d4"><input type="text" id="rsvp-name" class="inp" placeholder="Tu nombre y apellido"></div>
@@ -290,7 +299,7 @@ textarea.inp{resize:vertical;min-height:90px}
   <div class="anim zoom vline"></div>
 
   <div class="anim up d1 i-title">Mensajes</div>
-  <div class="anim up d2 i-data" style="font-size:34px">Muro de los Deseos</div>
+  <div class="anim up d2 poster" style="font-size:36px">MuRo De<br>LoS DeSeoS</div>
   <div class="fg anim up d3" style="margin-top:30px"><input type="text" id="wish-name" class="inp" placeholder="De parte de..."></div>
   <div class="fg anim up d4"><textarea id="wish-message" class="inp" placeholder="Deja un lindo mensaje para Ian André..."></textarea></div>
   <button onclick="sendWish()" class="anim up d4 btn" style="margin-bottom:70px">Enviar Mensaje</button>
@@ -299,7 +308,7 @@ textarea.inp{resize:vertical;min-height:90px}
 <!-- MENSAJE FINAL -->
 <section class="sec s-black" style="padding-bottom:140px">
   <div class="orb" style="width:340px;height:340px;background:var(--glow);opacity:.22;top:20%;left:50%;margin-left:-170px"></div>
-  <div class="anim zoom d1 title metal" style="font-size:40px">¡Gracias por ser parte de mis XV!</div>
+  <div class="anim zoom d1 title metal" style="font-size:40px">GRaCiAS<br>PoR SER PaRTe<br>De MiS XV</div>
   <div class="anim zoom d2 hline"></div>
   <p class="anim up d3 body" style="color:var(--silver-l)">Con ustedes, ¡la noche promete ser épica!</p>
   <p class="anim up d4 body" style="margin-top:20px">¡Prepárense para una noche increíble, muchas risas y recuerdos que no vamos a olvidar!</p>
