@@ -446,34 +446,35 @@ tick();setInterval(tick,1000);
   })();
 })();
 
-/* ---------- SISTEMA DE PASES ----------
-   Uso: invitacion.html?id=1   (usa la lista de abajo)
-        invitacion.html?p=4    (4 pases sin nombre)
-   Agrega aquí a tus invitados. */
+/* ---------- SISTEMA DE PASES (Invytia ?p=n) ---------- */
 const WA="525513422679";
-const dbInvitados={
-  "1":{nombre:"Fam Ejemplo Uno",pases:4},
-  "2":{nombre:"Invitado Ejemplo",pases:2}
-};
-let pases=10,nombre="Invitado Especial";
-const qs=new URLSearchParams(location.search);
-const pid=qs.get('id'),pp=qs.get('p')||qs.get('pases');
-if(pid&&dbInvitados[pid]){
-  pases=dbInvitados[pid].pases;nombre=dbInvitados[pid].nombre;
-  const n=document.getElementById('rsvp-name');n.value=nombre;n.disabled=true;
-  document.getElementById('pases-section').style.display='block';
-  document.getElementById('ticket-count').textContent=pases;
-  document.getElementById('ticket-name').textContent=nombre;
-}else if(pp&&!isNaN(pp)){pases=parseInt(pp);}
+let pases = 1; 
+const qs = new URLSearchParams(location.search);
+const pp = qs.get('p');
 
-const st=document.getElementById('rsvp-status'),gs=document.getElementById('rsvp-guests');
-st.addEventListener('change',e=>{
-  if(e.target.value==='yes'){
-    gs.style.display='block';
-    let o='<option value="" disabled selected>¿Cuántas personas asisten?</option>';
-    for(let i=1;i<=pases;i++)o+=`<option value="${i}">${i} persona${i>1?'s':''}</option>`;
-    gs.innerHTML=o;
-  }else{gs.style.display='none';gs.value='';}
+if (pp && !isNaN(pp)) {
+  pases = parseInt(pp);
+  document.getElementById('pases-section').style.display = 'block';
+  document.getElementById('ticket-count').textContent = pases;
+} else {
+  // Límite por defecto para el selector de RSVP si no hay parámetro en la URL
+  pases = 10;
+}
+
+const st = document.getElementById('rsvp-status');
+const gs = document.getElementById('rsvp-guests');
+st.addEventListener('change', e => {
+  if (e.target.value === 'yes') {
+    gs.style.display = 'block';
+    let o = '<option value="" disabled selected>¿Cuántas personas asisten?</option>';
+    for (let i = 1; i <= pases; i++) {
+      o += `<option value="${i}">${i} persona${i > 1 ? 's' : ''}</option>`;
+    }
+    gs.innerHTML = o;
+  } else {
+    gs.style.display = 'none';
+    gs.value = '';
+  }
 });
 
 function copyCLABE(){
@@ -482,6 +483,7 @@ function copyCLABE(){
   if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(n).then(ok).catch(fb);}else fb();
   function fb(){const t=document.createElement('textarea');t.value=n;document.body.appendChild(t);t.select();try{document.execCommand('copy');ok();}catch(e){alert('Copia manualmente: '+n);}t.remove();}
 }
+
 function sendRSVP(){
   const name=document.getElementById('rsvp-name').value.trim(),s=st.value,g=gs.value;
   if(!name||!s){alert('Por favor, escribe tu nombre y selecciona una opción de asistencia.');return;}
@@ -491,6 +493,7 @@ function sendRSVP(){
     :`¡Hola! Soy ${name}. Lamentablemente no me será posible asistir a los XV años de Ian André. Agradezco mucho la invitación.`;
   window.open(`https://wa.me/${WA}?text=${encodeURIComponent(m)}`,'_blank');
 }
+
 function sendWish(){
   const n=document.getElementById('wish-name').value.trim(),w=document.getElementById('wish-message').value.trim();
   if(!n||!w){alert('Por favor, ingresa tu nombre y tu mensaje.');return;}
